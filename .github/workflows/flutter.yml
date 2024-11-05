@@ -12,9 +12,6 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.0'
-        env:
-          PUB_CACHE: ${{ runner.temp }}/.pub-cache
-          FLUTTER_ROOT: /opt/hostedtoolcache/flutter/3.24.0-stable/x64
 
       - name: Install dependencies
         run: flutter pub get
